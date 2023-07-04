@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar  as NavbarBs} from 'react-bootstrap'
+import { Button, Container, Nav, Navbar  as NavbarBs} from 'react-bootstrap'
 import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
     className='bg-white shadow-sm mb-3'
     >
         <Container>
-            <Nav>
+            <Nav className='me-auto'>
                 <Nav.Link to="/" as={NavLink}>
                     Home 
                 </Nav.Link>
@@ -18,6 +18,9 @@ const Navbar = () => {
                     About
                 </Nav.Link>
             </Nav>
+            <Button>
+                
+            </Button>
         </Container>
     </NavbarBs>
   )
